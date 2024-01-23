@@ -1,24 +1,5 @@
-import { gql, useQuery } from "@apollo/client";
-
-const GET_USERS = gql`
-  # Write your query or mutation here
-  query {
-    users {
-      data {
-        id
-        name
-        email
-        phone
-        todos {
-          data {
-            title
-            completed
-          }
-        }
-      }
-    }
-  }
-`;
+import { useQuery } from "@apollo/client";
+import { GET_USERS } from "../graphql/queries";
 
 const Users = () => {
   const { loading, data, error } = useQuery(GET_USERS);
