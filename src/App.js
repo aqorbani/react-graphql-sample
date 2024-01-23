@@ -1,7 +1,9 @@
+import Users from "./components/Users";
+
 function App() {
   return (
     <>
-      <div>GQL</div>
+      <Users />
     </>
   );
 }
