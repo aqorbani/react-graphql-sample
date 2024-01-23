@@ -1,10 +1,7 @@
-
 function App() {
   return (
     <>
-    <div>
-      GQL
-    </div>
+      <div>GQL</div>
     </>
   );
 }
